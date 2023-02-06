@@ -3,5 +3,10 @@
   <div class="counter">
     <p>{{ counter }}</p>
   </div>
-  <app-child (custoever)="counter = $event" [place1]="x" [place2]="y" [place3]="z"></app-child>
+  <app-child
+    (counter_value)="counter = $event"
+    [place1]="x"
+    [place2]="y"
+    [place3]="z"
+  ></app-child>
 </div>

@@ -10,17 +10,17 @@ export class ChildComponent {
 @Input() place1:string = '';
 @Input() place2:string = '';
 @Input() place3:string = '';
-@Output() custoever=new EventEmitter;
+@Output() counter_value=new EventEmitter;
  increment(){
   this.count++;
-   this.custoever.emit(this.count);
+   this.counter_value.emit(this.count);
  }
  reset(){
   this.count=0;
-   this.custoever.emit(this.count);
+   this.counter_value.emit(this.count);
  }
  decrement(){
   this.count--;
-   this.custoever.emit(this.count);
+   this.counter_value.emit(this.count);
  }
 }
